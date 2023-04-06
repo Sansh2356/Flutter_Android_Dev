@@ -1,0 +1,5 @@
+Fire base is  a server which is server less
+Adding of firebase dependencies will be absolutely right as it is published by an authentic source hence threr 
+is no offense in doing so.
+We will add those dependencies to our code by:-
+flutter pub add command
