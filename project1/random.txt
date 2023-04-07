@@ -3,3 +3,27 @@ Adding of firebase dependencies will be absolutely right as it is published by a
 is no offense in doing so.
 We will add those dependencies to our code by:-
 flutter pub add command
+Use and diffrenec of hot reload and that of hot restarted
+they may differ in states as well as in other things such as 
+sometimes the change may be so major that it would not be possible for hot reload to express it 
+and provide the change accordingly in such cases hot restart will provide us with the desired result and changes which would be visible oon the android/Ios platform 
+visible on the android mirroring and the ios platform.
+
+::stateless and stateful:-
+stateless will not contain any mutable peices of information whereas stateful will contain mutable data.
+::Scaffold makes us make a app presentable to the 
+presenter or the customer.
+::widget and child inside the body which is used to explain the variuos things.
+::init state,disposed state 
+both are required in case of creation of proxy objects such as it acts as a bridge between
+the text that has been enetered by the user and the backend.
+::Text controller,controller keyword,textfield
+::Using of decoration keyword that enables the use of 
+hint text.
+::Obscure text and he property of disabling autocorrect and enable suggestions.
+::Handling the network error and also the configutation not found error 
+while checking the console for registering it by accesing options from firebase console.
+::Widget binding to make sure that firebase is initalized before anything is rendered on the screen 
+which can be done with the help of widget binding.
+::Flutter future builder widget to ensure that it will make the authentication/initialization of app
+before the rendering and processing.
