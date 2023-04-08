@@ -27,3 +27,14 @@ while checking the console for registering it by accesing options from firebase 
 which can be done with the help of widget binding.
 ::Flutter future builder widget to ensure that it will make the authentication/initialization of app
 before the rendering and processing.
+::widget builder
+::changing the homepoage to login view and refactoring our code ie. it means that
+we will push seperate functionalities to files of their own.
+::Handling exceptions in dart. which can be done using try and exception method in flutter using the accesing of
+e.code and other things.
+emailalradyinuse,weak-password,wrong password some exceptions associated with the login and register view,invalid email.
+::Inorder to get rid off the initialization of app through firebase we will have to initalize the app before the rendering is done.
+Adding the null check for the user information.
+::One of the null check error that we encountered while accesing whteher the email of the user is verified or not 
+was because the firebase require the developers to solve the case in whcih if the email accessed by you is null then how ill you proceed
+which was sole by using null check ?. operator and along with that making an intermediate variable that will convert the pseudo bool type to actual bool type andresolve our error.
