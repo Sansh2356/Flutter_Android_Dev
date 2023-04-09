@@ -1,9 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import '../main.dart';
+class VerifyEmailView extends StatefulWidget {
+  const VerifyEmailView({super.key});
 
-class _VerifyEmailViewState extends State<VerifyEmailView> {
+  @override
+  State<VerifyEmailView> createState() => VerifyEmailViewState();
+}
+
+class VerifyEmailViewState extends State<VerifyEmailView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

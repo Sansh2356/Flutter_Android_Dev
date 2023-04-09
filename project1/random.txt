@@ -44,3 +44,5 @@ an event that might occur in future.
 ::Named routes :-anaonymous routes and other routes which links between two different functionalities and are maps
 by nature having the entry of the route name along with a fucntion which returns a widget.
 ::Material widget not found,textfield because of no scaffold in there.
+::Use of actions in the appbar class,popmenu_item and pop_menu in app bar class.
+::popmenu_item returns a value which is required to access the information/action which will be performed by it hence we can use the enumeration for that purpose to decreas the complexity of our code.
