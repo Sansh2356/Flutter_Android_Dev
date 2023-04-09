@@ -38,3 +38,9 @@ Adding the null check for the user information.
 ::One of the null check error that we encountered while accesing whteher the email of the user is verified or not 
 was because the firebase require the developers to solve the case in whcih if the email accessed by you is null then how ill you proceed
 which was sole by using null check ?. operator and along with that making an intermediate variable that will convert the pseudo bool type to actual bool type andresolve our error.
+::Pushing views BuildContext. CTA button to send verification email.
+Use of await and async along with the idea of onpressed and children in button formation in a project,as it will return us
+an event that might occur in future.
+::Named routes :-anaonymous routes and other routes which links between two different functionalities and are maps
+by nature having the entry of the route name along with a fucntion which returns a widget.
+::Material widget not found,textfield because of no scaffold in there.
