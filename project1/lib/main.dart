@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:project1/views/login_view.dart';
 import 'package:project1/views/register_view.dart';
 import 'package:project1/views/verify_email_view.dart';
+import 'dart:developer' as devtools show log;
 import 'firebase_options.dart';
 
 void main() {
@@ -66,7 +67,9 @@ class _NotesViewState extends State<NotesView> {
         title: const Text('Main UI'),
         actions: [
           PopupMenuButton<MenuAction>(
-            onSelected: (value) {},
+            onSelected: (value) {
+              devtools.log(value.toString());
+            },
             itemBuilder: (context) {
               return [
                 const PopupMenuItem(
@@ -81,4 +84,28 @@ class _NotesViewState extends State<NotesView> {
       body: const Text('Hello world'),
     );
   }
+}
+
+Future<bool> showLogOutDialog(BuildContext context) {
+  return showDialog<bool>(
+    context: context,
+    builder: (context) {
+      return AlertDialog(
+        title: const Text('Sign Out'),
+        content: const Text('Are you sure you wnat to logout?'),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.of(context);
+            },
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () {},
+            child: const Text('Logout'),
+          ),
+        ],
+      );
+    },
+  ).then((value) => value ?? false);
 }
