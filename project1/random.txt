@@ -48,4 +48,5 @@ by nature having the entry of the route name along with a fucntion which returns
 ::popmenu_item returns a value which is required to access the information/action which will be performed by it hence we can use the enumeration for that purpose to decreas the complexity of our code.
 widget must not be null. 
 using log instead of print statements.
-::
+::Adding the signout options through adding switch in the popmenubutton widget and using the async and awit functions.
+also signing out from the firebase server through authentication accesing.

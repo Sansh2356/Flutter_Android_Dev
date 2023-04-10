@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +17,8 @@ void main() {
     home: const HomePage(),
     routes: {
       '/login/': (context) => const LoginView(),
-      '/register/': (context) => const RegisterView()
+      '/register/': (context) => const RegisterView(),
+      '/main/': (context) => const NotesView(),
     },
   ));
 }
@@ -67,8 +70,21 @@ class _NotesViewState extends State<NotesView> {
         title: const Text('Main UI'),
         actions: [
           PopupMenuButton<MenuAction>(
-            onSelected: (value) {
-              devtools.log(value.toString());
+            ///Popmenubutton to initiate logout///
+            onSelected: (value) async {
+              switch (value) {
+                case MenuAction.logout:
+                  final shouldlogout = await showLogOutDialog(context);
+                  if (shouldlogout) {
+                    await FirebaseAuth.instance.signOut();
+                    Navigator.of(context).pushNamedAndRemoveUntil(
+                      '/login/',
+                      (_) => false,
+                    );
+                  }
+
+                  break;
+              }
             },
             itemBuilder: (context) {
               return [
@@ -96,12 +112,14 @@ Future<bool> showLogOutDialog(BuildContext context) {
         actions: [
           TextButton(
             onPressed: () {
-              Navigator.of(context);
+              Navigator.of(context).pop(false);
             },
             child: const Text('Cancel'),
           ),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pop(true);
+            },
             child: const Text('Logout'),
           ),
         ],
