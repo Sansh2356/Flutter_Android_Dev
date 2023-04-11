@@ -50,3 +50,6 @@ widget must not be null.
 using log instead of print statements.
 ::Adding the signout options through adding switch in the popmenubutton widget and using the async and awit functions.
 also signing out from the firebase server through authentication accesing.
+::Avoiding hardcoding everywhere which can be done by using a file stroing all of our constants such as routes so that if we want to update something in our code we can 
+can do so in the entire body of code without changing it by going from the declaration to declaration type.
+::Error handling in flutter using generic dialog box which can be shown to the user.
