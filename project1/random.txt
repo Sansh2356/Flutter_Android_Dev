@@ -53,3 +53,8 @@ also signing out from the firebase server through authentication accesing.
 ::Avoiding hardcoding everywhere which can be done by using a file stroing all of our constants such as routes so that if we want to update something in our code we can 
 can do so in the entire body of code without changing it by going from the declaration to declaration type.
 ::Error handling in flutter using generic dialog box which can be shown to the user.
+::Auth services set up with the help of firebase.
+::Creation of auth classes to keep the entire auth checks by creating a authentication class 
+such as exception class which is already there imported by the various files in dart.
+::Not exposing firebase user to main UI is not a good idea in order to save it we will
+implement auth user.
