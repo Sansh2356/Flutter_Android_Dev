@@ -58,3 +58,18 @@ can do so in the entire body of code without changing it by going from the decla
 such as exception class which is already there imported by the various files in dart.
 ::Not exposing firebase user to main UI is not a good idea in order to save it we will
 implement auth user.
+::Talking about tests in software devlopment and indulging them in our authenitication service provider.
+Database implementation in dart.
+::CRUD storage c-creating,r-,u-updating the data,d-deleting the data,using the sqllite as the dbms. by the usage of
+DB browser for the sqllite.
+::dependencies required to add the sqllite features and programatically creating the tables required for the storage in flutter 
+sqflite,path-provider and path to create file in the document folder which has been accessed by the path provider dependencies and to access the given file.
+::Creating the file inside the lib to store the data and use the dependencies.
+::Covariant means that the classes which are of same type,the return type from the table created in database will return us
+in the form of a map,since the database will have both the primary key for the first table and a foreign key which can be used to access the 
+other table in which it is the primary key.
+::Crating database user with certain functions implemented in class of user to access the user 
+tostring.hashcode,Covariant and mapping which will get us the user.
+::Similarly we will implement our notes class that will help us get the notes corresponding to a particular user's id using the forign key.
+::Creating a database sevice future function implementing read,write,delete,open and close commands of a database. also testing exceptions which
+can be associated with database.
