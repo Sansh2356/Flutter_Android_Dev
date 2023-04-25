@@ -73,3 +73,5 @@ tostring.hashcode,Covariant and mapping which will get us the user.
 ::Similarly we will implement our notes class that will help us get the notes corresponding to a particular user's id using the forign key.
 ::Creating a database sevice future function implementing read,write,delete,open and close commands of a database. also testing exceptions which
 can be associated with database.
+::Working with streams and stream controllers stram controllere to create by using broadcast and list to be updated which in our case is 
+list of note.
