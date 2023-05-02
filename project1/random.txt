@@ -83,3 +83,13 @@ in new note view.
 editing controller which will be required for edititng the text,updating it or increasing the existing or new note size till the time user has done writing into the note.
 ::Afte a user is done writing to a particular note we will sync that changes to our database and the also sync those changes to firebase.
 ::creation of new note using the functionality of create a new user using the value.
+::If a user does not type any text in the body of new note then we will delete that particular note using the delete note command created in notesservice.
+::saving a note if text entered in a new note is not empty then we will use update note functionality of notesservice
+and note will get updated. and dispose function will be used to record the changes afte the new note video is killed.
+::Init function will be used to mark certain changes befor the implementation of a notes view such as creating notesservice and textcontroller.
+::Updating the note not at the end but by updating each word entered by the user for that we will require listeners
+::Displaying notes in notes view using the listview inside the futurebuilder in stream builder of new NotesView
+deleting and updating of notes
+::Generic dialog creation instead of show error dialog that was deleted 
+using a map of strings and keys marked with generic type T that will contain the titles of various title's of
+error dialogs along with specific keys of T type .
