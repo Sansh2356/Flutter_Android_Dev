@@ -75,3 +75,11 @@ tostring.hashcode,Covariant and mapping which will get us the user.
 can be associated with database.
 ::Working with streams and stream controllers stram controllere to create by using broadcast and list to be updated which in our case is 
 list of note.
+::Replacing the cache functionality in other functions implemented in the notes service class.
+::Preparing new note view to implement the view of new notes in our app.
+::whenever the user would open the new view of note then there will be following services of note service functionalities that will be used 
+in new note view.
+::Future builder is used to ensure that the notesservice's functionality is used to return a value immediately for that we will create local variables and an text
+editing controller which will be required for edititng the text,updating it or increasing the existing or new note size till the time user has done writing into the note.
+::Afte a user is done writing to a particular note we will sync that changes to our database and the also sync those changes to firebase.
+::creation of new note using the functionality of create a new user using the value.

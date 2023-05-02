@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:path/path.dart';
 import 'package:project1/services/auth/auth_service.dart';
 import 'package:project1/views/login_view.dart';
+import 'package:project1/views/notes/new_note_view.dart';
 import 'package:project1/views/register_view.dart';
 import 'constants/routes.dart';
 import 'package:project1/views/verify_email_view.dart';
-import 'package:project1/views/notes_view.dart';
+import 'package:project1/views/notes/notes_view.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,6 +19,7 @@ void main() {
       registerroute: (context) => const RegisterView(),
       notesroute: (context) => const NotesView(),
       verifyEmailroute: (context) => const VerifyEmailView(),
+      newNoteRoute: (context) => const NewNoteView(),
     },
   ));
 }
